@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: 'gilroy';
+    src: url(/assets/Gilroy-Medium.e7e7c091.ttf);
+}
+         .page7{
+    width: 100vw;
+    min-height: 150vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.7rem;
+    row-gap: 2rem;
+    position: relative;
+   
+   
+  }
+  .page7 h1{
+    font-size: 4rem;
+    line-height: 0;
+    text-align: center;
+  }
+.resume-con{
+
+    width: 60vw;
+    height: 150vh;
+    
+}
+.rs{
+    transform-origin: top;
+    width: 100%;
+    height: 28.7%;
+}
+.rs img{
+    width: 100%;
+    height: 100%;
+}
+.resume-two{
+    transform: perspective(1000px) rotateX(-90deg);
+}
+.resume-three{
+    transform: perspective(1000px) rotateX(-90deg);
+}
+.resume-four{
+    transform: perspective(1000px) rotateX(-90deg);
+}
+    </style>
+</head>
+<body>
+   
+    <div class="page7" >
+        <div class="resume-intro">
+           <h1>Resume</h1>
+            <p>Have a look at my resume, feel free to download</p>
+        </div>
+        <div class="resume-con">
+            <div class="resume-one rs"><img src="/assets/resume-wp.png" alt="" srcset=""></div>
+            <div class="resume-two rs"><img src="/assets/resume-2.png" alt="" srcset=""></div>
+            <div class="resume-three rs"><img src="/assets/resume-3.png" alt="" srcset=""></div>
+            <div class="resume-four rs"><img src="/assets/resume-4.png" alt="" srcset=""></div>
+        </div>
+        <div class="pg4-overlay">
+            <a href="/assets/blue professional modern CV resume.pdf">
+                <button><h3>Download <i class="ri-arrow-right-up-line"></i></h3>
+                    <h3>Download <i class="ri-arrow-right-up-line"></i></h3></button>
+            </a>
+        </div>
+    </div>
+
+ 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+  
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Contact Form</title>
+</head>
+<body>
+     <!-- <div class="loader-wave">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.6/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/oe3INYvhMMziVp3u/scene.splinecode"></spline-viewer>
+         </div> -->
+     <div class="main-con">
+        <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.6/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/k98VJQ6CbE9O0kOF/scene.splinecode"></spline-viewer> -->
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.6/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/1J0xuzgRzZIdNz7f/scene.splinecode"></spline-viewer>
+     </div>
+    <div class="main">
+       
+        <div class="con">
+            
+            <div class="left">
+               
+                    <h1>Contact Me</h1>
+                  
+                
+               
+                <div class="left-con">
+                    <div class="location">
+                        <i class="ri-map-pin-2-line"></i>
+                        <h3>Location <br>
+                        <span>Sargodha, Punjab</span></h3>
+                    </div>
+                    <div class="phone">
+                        <i class="ri-phone-line"></i>
+                        <h3>Phone number <br>
+                        <span>(555) 123-4567</span></h3>
+                    </div>
+                    <div class="email">
+                        <i class="ri-mail-line"></i>
+                        <h3>Email Adress <br>
+                        <span>sammansheikh6@gmail.com</span></h3>
+                    </div>
+                   
+                </div>
+                
+              
+            </div>
+            <div class="right">
+                <div class="form">
+                       <h1>Get in touch</h1>
+
+                        <form action="https://api.web3forms.com/submit" method="POST" name="myform">
+                    
+
+                            <input type="hidden" name="access_key" value="cf1c6640-bd1a-45f3-83f5-782d396752e1">
+                            <input type="text" name="fname" id=""  placeholder="Enter your name">
+                            <input type="email" name="email" id=""  placeholder="Enter your email">
+                             <textarea name="message" id="" cols="3" rows="3" placeholder="Type Your Message Here"></textarea>
+                           
+                            
+                        <button type="submit" onclick="return form_validate()">Submit</button>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    </form>
+                </div>
+               
+             
+            </div>
+        </div>
+    </div>
+  
+   <script >
+          function form_validate() {
+            var name = document.forms['myform']['fname'].value;
+            var email = document.forms['myform']['email'].value;
+            var textarea = document.forms['myform']['message'].value;
+
+            if (name === "") {
+                alert("Enter your name kindly");
+                return false;
+            } else if (email === "") {
+                alert("Enter your email kindly");
+                return false;
+            } else if (textarea === "") {
+                alert("Type your message kindly");
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function loader(){
+
+    var tl=gsap.timeline()
+    tl.to(".loader-wave",{
+        display:"none",
+        delay:2
+    })
+
+}
+loader()
+   </script> 
+</body>
+</html>
