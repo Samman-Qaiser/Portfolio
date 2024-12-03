@@ -167,6 +167,11 @@ textarea{
 textarea:hover{
     border: 2px solid black;
 }
+.resume-intro button{
+    margin: auto;
+    transform: translateX(50%);
+    border-radius: 50%;
+}
 button{
   
     color: black;

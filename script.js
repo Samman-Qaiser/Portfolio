@@ -44,7 +44,7 @@ function loader(){
     var tl=gsap.timeline()
     tl.to(".loader-wave",{
         display:"none",
-        delay:10
+        delay:4
     })
     tl.from('.name ',{
         x:500,
@@ -534,6 +534,10 @@ function resume(){
         opacity:0,
         y:500
      },"a")
+     tl.to(".pg4-overlay button",{
+     
+        y:100
+})
 }
 resume()
 function footer(){
